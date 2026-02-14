@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Consultancy – Online Form & Print Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: 'Roboto', sans-serif; color:#333; line-height:1.6; scroll-behavior: smooth; background:#f4f4f4;}
+        
+        header {
+            background: url('https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        header h1 { font-size:3rem; margin-bottom:20px; }
+        header p { font-size:1.5rem; max-width:700px; }
+
+        nav {
+            position: fixed;
+            top:0; left:0; width:100%;
+            background: rgba(0,0,0,0.7);
+            display:flex;
+            justify-content:center;
+            padding:15px 0;
+            z-index:1000;
+        }
+        nav a {
+            color:white;
+            text-decoration:none;
+            margin:0 20px;
+            font-weight:bold;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #1e90ff; }
+
+        section {
+            padding:80px 20px;
+            max-width:1200px;
+            margin:auto;
+        }
+        section h2 {
+            text-align:center;
+            color:#1e90ff;
+            margin-bottom:40px;
+            font-size:2.5rem;
+        }
+
+        .services {
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+        }
+        .service-card {
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align:center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .service-card h3 { margin:20px 0; color:#333; }
+        .service-card p { color:#666; }
+
+        .contact-info, form { max-width:600px; margin:auto; }
+        .contact-info p { margin:15px 0; font-size:1.1rem; }
+        form input, form textarea, form select {
+            width:100%; padding:15px; margin:10px 0; border:1px solid #ccc; border-radius:5px;
+        }
+        form button {
+            padding:15px 30px; background:#1e90ff; color:white; border:none; border-radius:5px; cursor:pointer;
+            transition: background 0.3s;
+        }
+        form button:hover { background:#0b63c3; }
+
+        footer { text-align:center; padding:20px; background:#333; color:white; }
+
+        /* Online Form Section Styling */
+        #online-form h3 { margin-bottom:20px; color:#1e90ff; text-align:center; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#online-form">Online Form</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
+    <h1>Ashish Consultancy</h1>
+    <p>Online Form Submission & Print Services in Nava Naroda, Ahmedabad. Fast, Reliable, and Professional Assistance for all your official and personal documentation needs.</p>
+</header>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>Online Form Assistance</h3>
+            <p>We help you fill and submit all official forms quickly and accurately, saving your time and effort.</p>
+        </div>
+        <div class="service-card">
+            <h3>Printing Services</h3>
+            <p>High-quality printing of documents, certificates, application forms, and more at affordable rates.</p>
+        </div>
+        <div class="service-card">
+            <h3>Document Guidance</h3>
+            <p>Professional guidance for required documents, verification, and official procedures.</p>
+        </div>
+        <div class="service-card">
+            <h3>Fast Delivery</h3>
+            <p>Get your printed documents and forms delivered quickly with reliable service.</p>
+        </div>
+    </div>
+</section>
+
+<section id="online-form">
+    <h2>Submit Your Form Online</h2>
+    <h3>Fill out the form below, and we will handle the submission & printing for you</h3>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <select required>
+            <option value="">Select Form Type</option>
+            <option value="government">Government Form</option>
+            <option value="education">Educational Form</option>
+            <option value="other">Other</option>
+        </select>
+        <textarea rows="5" placeholder="Additional Details / Notes"></textarea>
+        <button type="submit">Submit Form</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p>📍 Nava Naroda, Ahmedabad, Gujarat, India</p>
+        <p>📞 +91-9428104969</p>
+        <p>✉️ ashish15157102@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 Ashish Consultancy | All Rights Reserved
+</footer>
+
+</body>
+</html>
