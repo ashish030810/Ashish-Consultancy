@@ -8,7 +8,7 @@ A home-based digital services business offering online form filling, printing, s
 
 ## 🌐 Live Website
 
-[ashishconsultancy.netlify.app](https://ashishconsultancy.netlify.app) *(update with your actual link)*
+[ashishconsultancy.netlify.app](https://ashish-consultancy.netlify.app) 
 
 ---
 
